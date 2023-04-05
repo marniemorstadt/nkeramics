@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin-right: 2rem;
+  color: #4C2A1B;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+
+a {
+  color: #4C2A1B;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+a:hover {
+  color: #B2603B;
+}

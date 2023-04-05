@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <%= favicon_link_tag %>
     <title>Nkeramics</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -8,9 +9,45 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   </head>
+   <h1 style="text-align:center"><%= image_tag "logo_nkeramics.svg"%></h1>
+  <%# <nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+      <li>|</li>
+    <li><a href="#">About</a></li>
+      <li>|</li>
+    <li><a href="#">Custom Orders</a></li>
+       <li>|</li>
+     <li><a href="#">Catalogue</a></li>
+        <li>|</li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav> %>
 
-  <body>
+  <body style="background-color: #e1d8b9;
+    background-image: url('grain.png');
+    background-repeat: repeat;
+    background-attachment: fixed;">
     <%= yield %>
   </body>
 </html>
+
+<footer>
+  <div class="container">
+    <div class="logo">
+    </div>
+    <div class="social-media">
+      <ul>
+        <li><a href="mailto:marnielumo@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+        <li><a href="https://wa.me/351962620650"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="https://www.instagram.com/nkeramics/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="credits">
+    <p style="text-align:center; color:#4C2A1B;">&copy; 2023 NKeramics. All rights reserved.</p>
+     <p style="text-align:center; color:#4C2A1B;">Website created with ♥︎ by Marnie Morstadt</p>
+  </div>
+</footer>
