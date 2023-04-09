@@ -16,7 +16,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-radius: 20px;
 }
+
 
 html{
   height: 100%;
@@ -120,4 +122,5 @@ html{
   transform: scale(1) translateZ(0);
   transition: filter 200ms linear, transform 200ms linear;
   color: white;
+  font-weight: 300;
 }
