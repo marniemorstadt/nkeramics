@@ -11,7 +11,9 @@
     <%= javascript_importmap_tags %>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   </head>
-   <h1 style="text-align:center"><%= image_tag "logo_nkeramics.svg"%></h1>
+     <a href="/">
+      <h1 style="text-align:center"><%= image_tag "logo_nkeramics.svg" %></h1>
+     </a>
   <%# <nav>
   <ul>
     <li><a href="#">Home</a></li>
@@ -32,6 +34,8 @@
     background-attachment: fixed;">
     <%= yield %>
 
+        <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
 </html>
 
 <footer>
