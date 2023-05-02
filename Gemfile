@@ -62,4 +62,6 @@ group :development do
   gem "font-awesome-sass", "~> 6.1"
   gem "simple_form"
   gem "autoprefixer-rails"
+  gem "devise"
+  gem "dotenv-rails", groups: [:development, :test]
 end
