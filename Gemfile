@@ -63,5 +63,7 @@ group :development do
   gem "simple_form"
   gem "autoprefixer-rails"
   gem "devise"
+  gem "cloudinary"
   gem "dotenv-rails", groups: [:development, :test]
+
 end
