@@ -4,7 +4,7 @@ class Users::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
 
   def create
-    if params[:user][:email] == 'kerpnern@gmail.com' && params[:user][:password] == '1234567890'
+    if params[:user][:email] == 'kerpnern@gmail.com'
       super
     else
       flash.now[:alert] = 'Invalid email or password'

@@ -2,6 +2,8 @@
 @import "font-awesome";
 @import "components/navbar";
 @import "components/form";
+@import "components/cards";
+@import "components/image";
 
 :root{
   --spacing-s: 8px;
@@ -125,4 +127,3 @@ html{
   color: white;
   font-weight: 300;
 }
-

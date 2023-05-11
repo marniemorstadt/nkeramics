@@ -1,1 +1,29 @@
+<a href="/" style= " position: absolute;
+  top: 20px; left: 20px;  font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a>
+<div>
 
+
+<ul class="cards">
+
+<% @products.each do |e| %>
+
+  <%= link_to product_path(e) do %>
+   <div class="card-trip">
+      <% if e.photos.attached? %>
+        <%= cl_image_tag e.photos.first.key %>
+      <% else %>
+        <img src="htt ps://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+      <% end %>
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= e.name %></h2>
+
+          </div>
+          <p class="card-trip-pricing"><%= "€#{e.price}"%></p>
+        </div>
+    </div>
+  <% end %>
+
+<% end %>
+
+</ul>

@@ -10,10 +10,20 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <style>
+    body {
+      background-image: url("NKillustrations_hands.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
   </head>
+
      <a href="/">
       <h1 style="text-align:center"><%= image_tag "logo_nkeramics.svg" %></h1>
      </a>
+    
   <%# <nav>
   <ul>
     <li><a href="#">Home</a></li>
@@ -38,7 +48,7 @@
        <p class="alert"><%= alert %></p>
 </html>
 
-<footer>
+<footer style="margin-top: 0px;">
   <div class="container">
     <div class="logo">
     </div>
@@ -47,7 +57,6 @@
         <li><a href="mailto:kerpnern@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
         <li><a href="https://wa.me/351962620650"><i class="fab fa-whatsapp"></i></a></li>
         <li><a href="https://www.instagram.com/nkeramics/"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="/users/sign_in"><i class="fa-light fa-user"></i></a></li>
       </ul>
     </div>
   </div>

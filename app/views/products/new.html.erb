@@ -1,9 +1,9 @@
- <h3>Add a new producr</h3>
+ <h3>Add a new Product</h3>
     <%= simple_form_for @product do |f| %>
         <%= f.input :name %>
         <%= f.input :description %>
         <%= f.input :price %>
         <%= f.input :size %>
-        <%# <%= f.input :photos, as: :file, input_html: { multiple: true }%>
+        <%= f.input :photos, as: :file, input_html: { multiple: true }%>
         <%= f.submit %>
     <% end %>
