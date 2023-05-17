@@ -1,34 +1,34 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
- <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
+ <%# <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
 <section class="hero-section" style="margin-top:30px;">
   <div class="card-grid">
     <a class="card" href="/about">
-      <div class="card__background" style="background-image: url(https://andrewallenceramics.com.au/wp-content/uploads/2022/02/andrew-allen-ceramics-hero-3-1.jpg)"></div>
+      <div class="card__background" style="background-image: url(<%= asset_url("naomi.png") %>)"></div>
       <div class="card__content">
         <p class="card__category"> </p>
-        <h3 class="card__heading">About Me</h3>
+        <h3 class="card__heading" style="font-family: 'Sarabun', sans-serif;">About Me</h3>
       </div>
     </a>
     <a class="card" href="/products">
-      <div class="card__background" style="background-image: url(https://www.visitvictoria.com/-/media/atdw/high-country/see-and-do/shopping-and-fashion/art-and-design/9283329537321c813b420222ff1e015d_1600x1200.jpeg?ts=20211216501140)"></div>
+      <div class="card__background" style="background-image: url(<%= asset_url("mugs.jpeg") %>)"></div>
       <div class="card__content">
         <p class="card__category"> </p>
-        <h3 class="card__heading">Catalogue</h3>
+        <h3 class="card__heading" style="font-family: 'Sarabun', sans-serif;">Shop</h3>
       </div>
     </a>
     <a class="card" href="/lessons">
       <div class="card__background" style="background-image: url(https://www.truro-penwith.ac.uk/app/uploads/2022/12/Pottery.jpg)"></div>
       <div class="card__content">
         <p class="card__category"> </p>
-        <h3 class="card__heading">Lessons</h3>
+        <h3 class="card__heading" style="font-family: 'Sarabun', sans-serif;">Inspiration</h3>
       </div>
     </li>
     <a class="card" href="/contact">
-      <div class="card__background" style="background-image: url(https://www.abeautifulplate.com/wp-content/uploads/2020/12/ceramic-guide-1-2-600x400.jpg)"></div>
+      <div class="card__background" style="background-image: url(<%= asset_url("Alef.jpeg") %>)"></div>
       <div class="card__content">
         <p class="card__category"> </p>
-        <h3 class="card__heading">Contact Me</h3>
+        <h3 class="card__heading" style="font-family: 'Sarabun', sans-serif;">Contact Me</h3>
       </div>
     </a>
   <div>

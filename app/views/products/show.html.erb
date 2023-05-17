@@ -1,7 +1,22 @@
 <a href="/products" style= " position: absolute;
   top: 20px; left: 20px;  font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a>
- <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
-<div class="container">
+ <%# <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
+ <div>
+    <nav style="margin-top:0px;">
+      <ul>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/">Home</a></li>
+        <li style="font-size: 20px;">❁</li>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/about">About</a></li>
+        <li style="font-size: 20px;">❁</li>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/products">Shop</a></li>
+         <li style="font-size: 20px;">❁</li>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/lessons">Inspo</a></li>
+         <li style="font-size: 20px;">❁</li>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+</div>
+<div class="container" style="margin-top: 100px">
   <div class="row">
     <div class="col-md-6">
       <% if @product.photos.size == 1 %>
@@ -20,10 +35,11 @@
       <% end %>
     </div>
     <div class="col-md-6">
-      <h1 style="color: #7F472E; margin-bottom:20px"><%= @product.name %></h1>
-      <h3 style="color: #7F472E"><%= @product.description %></h3>
-      <h4 style="color: #7F472E"><%= @product.size%></h4>
-      <h4 style="color: #7F472E; text-weight:light">€<%= @product.price %></h4>
+      <h1 style="color: #7F472E; margin-bottom:20px; font-size:28px; font-family: 'Sarabun', sans-serif;"><%= @product.name %></h1>
+      <%# <h3 style="color: #7F472E"><%= @product.description %></h3>
+      <h3 style="color: #7F472E; font-size:20px; font-family: 'Sarabun', sans-serif;"><%= @product.description.gsub('.', '<br>').html_safe %></h3>
+      <h4 style="color: #7F472E; font-family: 'Sarabun', sans-serif;"><%= @product.size%></h4>
+      <h4 style="color: #7F472E; text-weight:light; font-family: 'Sarabun', sans-serif;">€<%= @product.price %>/unit</h4>
 
     </div>
     <div class="container-fluid">

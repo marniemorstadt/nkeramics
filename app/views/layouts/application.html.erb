@@ -10,20 +10,16 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;500&display=swap" rel="stylesheet">
 
-    <style>
-    body {
-      background-image: url("NKillustrations_hands.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
   </head>
 
      <a href="/">
       <h1 style="text-align:center"><%= image_tag "logo_nkeramics.svg" %></h1>
      </a>
-    
+
   <%# <nav>
   <ul>
     <li><a href="#">Home</a></li>
@@ -48,7 +44,7 @@
        <p class="alert"><%= alert %></p>
 </html>
 
-<footer style="margin-top: 0px;">
+<footer style="margin-top: 0px; margin-bottom: 40px;">
   <div class="container">
     <div class="logo">
     </div>
@@ -61,8 +57,8 @@
     </div>
   </div>
   <div class="credits">
-    <p style="text-align:center; color:#4C2A1B;">&copy; 2023 NKeramics. All rights reserved.</p>
-     <p style="text-align:center; color:#4C2A1B;">Website created with ♥︎ by Marnie Morstadt</p>
+    <p style="text-align:center; color:#4C2A1B; font-family: 'Sarabun', sans-serif;">&copy; 2023 NKeramics. All rights reserved.</p>
+     <p style="text-align:center; color:#4C2A1B;font-family: 'Sarabun', sans-serif;">Website created with ♥︎ by Marnie Morstadt</p>
   </div>
 </footer>
 </body>

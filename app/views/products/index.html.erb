@@ -1,7 +1,22 @@
 <a href="/" style= " position: absolute;
   top: 20px; left: 20px;  font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a>
 <div>
-
+<%# <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
+<div>
+    <nav style="margin-top:0px;">
+      <ul>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/">Home</a></li>
+        <li style="font-size: 20px;">❁</li>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/about">About</a></li>
+        <li style="font-size: 20px;">❁</li>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/products">Shop</a></li>
+         <li style="font-size: 20px;">❁</li>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/lessons">Inspo</a></li>
+         <li style="font-size: 20px;">❁</li>
+        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+</div>
 
 <ul class="cards">
 
@@ -16,10 +31,10 @@
       <% end %>
         <div class="card-trip-infos">
           <div>
-            <h2><%= e.name %></h2>
+            <h2 style= "font-family: 'Sarabun', sans-serif;"><%= e.name %></h2>
 
           </div>
-          <p class="card-trip-pricing"><%= "€#{e.price}"%></p>
+          <p class="card-trip-pricing" style= "font-family: 'Sarabun', sans-serif;"><%= "€#{e.price}/unit"%></p>
         </div>
     </div>
   <% end %>
