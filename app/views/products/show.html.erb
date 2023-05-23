@@ -41,13 +41,3 @@
       <h4 style="color: #7F472E; font-family: 'Sarabun', sans-serif;"><%= @product.size%></h4>
       <h4 style="color: #7F472E; text-weight:light; font-family: 'Sarabun', sans-serif;">€<%= @product.price %>/unit</h4>
 
-    </div>
-    <div class="container-fluid">
-      <div class="delete-button">
-        <%= link_to product_path(@product), method: :delete, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
-          <i class="fas fa-times"></i>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>

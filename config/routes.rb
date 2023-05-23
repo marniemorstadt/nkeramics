@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get "contact", to: "pages#contact"
     get "lessons", to: "pages#lessons"
     get "products", to: "products#index"
-    get "products/new", to: "products#new"
+    get "products/new", to: "products#new", as: :new_product
     get "products/:id", to: "products#show", as: :product
     post "products", to: "products#create"
     get "products/:id/edit", to: "products#edit", as: :edit_product

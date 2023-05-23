@@ -1,4 +1,3 @@
-
 <div class="container" style="margin:50px">
  <h3 style= "color: #7F472E; font-family: 'Sarabun', sans-serif;">Hey Naomi! Here you can create a new Product❁</h3>
     <%= simple_form_for @product do |f| %>
@@ -9,3 +8,15 @@
         <%= f.input :photos, as: :file, input_html: { multiple: true }%>
         <button><%= f.submit %></button>
     <% end %>
+</div>
+
+</div>
+    <div class="container-fluid">
+      <div class="delete-button">
+        <%= link_to product_path(@product), method: :delete, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+          <i class="fas fa-times"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
