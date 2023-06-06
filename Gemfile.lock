@@ -240,6 +240,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootsnap
+  bundler
   cloudinary
   debug
   devise

@@ -65,5 +65,5 @@ group :development do
   gem "devise"
   gem "cloudinary"
   gem "dotenv-rails", groups: [:development, :test]
-
+  gem "bundler"
 end
