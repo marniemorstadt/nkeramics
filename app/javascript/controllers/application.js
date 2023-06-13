@@ -9,17 +9,17 @@ window.Stimulus   = application
 export { application }
 
 
-// code for cursor trail
-
-   var dots = [],
-   mouse = {
-     x: 0,
-     y: 0
-   };
 
 
+//    var dots = [],
+//    mouse = {
+//      x: 0,
+//      y: 0
+//    };
 
-   // dot javascript
+
+
+
 // var Dot = function() {
 //  this.x = 0;
 //  this.y = 0;
