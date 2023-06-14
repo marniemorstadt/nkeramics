@@ -60,7 +60,11 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   gem "font-awesome-sass", "~> 6.1"
-  gem "simple_form"
+
+  group :development, :test, :production do
+  gem 'simple_form'
+  # Other gems
+end
   gem "autoprefixer-rails"
 
  group :production do
