@@ -15,6 +15,7 @@ require "action_cable/engine"
 # require "rails/test_unit/railtie"
 require "active_storage/engine"
 require 'devise'
+require 'simple_form'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
