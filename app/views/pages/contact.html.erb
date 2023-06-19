@@ -1,8 +1,9 @@
-<div>
-    <nav style="margin-top:0px;">
+<div class="container mt-4">
+  <div>
+    <nav class="container mt-4" style="margin-top:0px;">
       <ul>
-        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/">Home</a></li>
-        <li style="font-size: 20px;">❁</li>
+        <%# <li style= "font-family: 'Sarabun', sans-serif;"><a href="/">Home</a></li>
+        <li style="font-size: 20px;">❁</li> %>
         <li style= "font-family: 'Sarabun', sans-serif;"><a href="/about">About</a></li>
         <li style="font-size: 20px;">❁</li>
         <li style= "font-family: 'Sarabun', sans-serif;"><a href="/products">Shop</a></li>
@@ -14,21 +15,23 @@
     </nav>
 </div>
       <!-- content here -->
- <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
+ <%= image_tag("NKillustrations_hands.png", class: "image-behind-components", style: "position: fixed;") %>
 
-<a href="/" style= " position: absolute;
-  top: 20px; left: 20px;  font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a>
-<div class="container" style="margin-top:50px;">
-<h5 style="color:#7F472E; font-weight: 200; flex: 1; max-width: 600px; text-align: center; margin-left:260px; margin-bottom:30px; font-family: 'Sarabun', sans-serif;">Feel free to use this form for custom orders or any questions you may have! Alternitively,
-you can also contact me on <a href="https://www.instagram.com/nkeramics/">Instagram</a> and via <a href="https://wa.me/351962620650">Whatsapp</a>! I look forward to it! ♥︎</h5>
-<form id="my-form" action="https://formspree.io/f/xayzvyoa" method="POST">
-  <label style="color:#7F472E; font-weight: 200; flex: 1; font-family: 'Sarabun', sans-serif;">Email:</label>
-  <input type="email" name="email" />
-  <label style="color:#7F472E; font-weight: 200; flex: 1; font-family: 'Sarabun', sans-serif;">Message:</label>
-  <textarea name="message"></textarea>
-  <button id="my-form-button">Send Message</button>
-  <p id="my-form-status"></p>
-</form>
+<%# <a href="/" style= " position: absolute;
+  top: 20px; left: 20px;  font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a> %>
+<%# <a href="/" style= "position: absolute; top: 20px; left: 20px; font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a> %>
+<div style="margin-top: 50px;">
+  <h5 style="color: #7F472E; font-weight: 200; max-width: 600px; text-align: center; margin: 0 auto 30px; font-family: 'Sarabun', sans-serif;">Feel free to use this form for custom orders or any questions you may have! Alternatively, you can also contact me on <a href="https://www.instagram.com/nkeramics/">Instagram</a> and via <a href="https://wa.me/351962620650">WhatsApp</a>! I look forward to it! ♥︎</h5>
+  <form id="my-form" action="https://formspree.io/f/xayzvyoa" method="POST">
+    <label style="color: #7F472E; font-weight: 200; font-family: 'Sarabun', sans-serif;">Email:</label>
+    <input type="email" name="email" />
+    <label style="color: #7F472E; font-weight: 200; font-family: 'Sarabun', sans-serif;">Message:</label>
+    <textarea name="message"></textarea>
+    <button id="my-form-button" style="text-align: center; margin: 0 auto;">Send Message</button>
+    <p id="my-form-status"></p>
+  </form>
+</div>
+
 
 <!-- Place this script at the end of the body tag -->
 <script>

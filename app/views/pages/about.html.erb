@@ -1,29 +1,66 @@
+<%# <a href="/" style="position: absolute; top: 20px; left: 20px; font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a> %>
+<%= image_tag("NKillustrations_hands.png", class: "image-behind-components", style: "position: fixed;") %>
 
-<a href="/" style= " position: absolute;
-  top: 20px; left: 20px;  font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a>
-   <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
-<%# <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
 <div>
-    <nav style="margin-top:0px;">
-      <ul>
-        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/">Home</a></li>
-        <li style="font-size: 20px;">❁</li>
-        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/about">About</a></li>
-        <li style="font-size: 20px;">❁</li>
-        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/products">Shop</a></li>
-         <li style="font-size: 20px;">❁</li>
-        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/lessons">Inspo</a></li>
-         <li style="font-size: 20px;">❁</li>
-        <li style= "font-family: 'Sarabun', sans-serif;"><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
+  <nav style="margin-top:0px;">
+    <ul>
+      <%# <li style="font-family: 'Sarabun', sans-serif;"><a href="/">Home</a></li>
+      <li style="font-size: 20px;">❁</li> %>
+      <li style="font-family: 'Sarabun', sans-serif;"><a href="/about">About</a></li>
+      <li style="font-size: 20px;">❁</li>
+      <li style="font-family: 'Sarabun', sans-serif;"><a href="/products">Shop</a></li>
+      <li style="font-size: 20px;">❁</li>
+      <li style="font-family: 'Sarabun', sans-serif;"><a href="/lessons">Inspo</a></li>
+      <li style="font-size: 20px;">❁</li>
+      <li style="font-family: 'Sarabun', sans-serif;"><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
 </div>
-<div class="container" style="border-radius:20px; display: flex; align-items: center; margin-top:60px;">
-  <%= image_tag "nomile1.jpeg", height: "400px", style: "margin-right: 20px;" %>
-  <h5 style="color:#7F472E; font-weight: 200; flex: 1; font-family: 'Sarabun', sans-serif;">Hey you! I'm Naomi, and I'm thrilled to welcome you to my ceramic website. Here’s just a bit about me. <br> My journey in the world of ceramics began in the vibrant city of Tel Aviv. I enrolled in pottery classes and discovered a deep connection to clay—its malleability, its ability to transform into something beautiful and meaningful.<br>
-After honing my skills and exploring different techniques, I embarked on a new adventure and found myself in the enchanting city of Lisbon. Living here has been an incredible source of inspiration. The blend of ancient traditions and modern creativity, along with the stunning coastal landscapes, has greatly influenced my artistic style.<br>
-Each piece I create tells a story—a story of my personal journey, the places I've been, and the emotions I've experienced. I love experimenting with forms, textures, and glazes. My goal is to bring beauty and joy into people's lives through my ceramics.<br>
-In addition to creating unique pieces, I'm dedicated to providing my customers with affordability. I want my art to be enjoyed by as many people as possible, without compromising on quality or craftsmanship.<br>
-Thank you for joining me on this artistic journey. I invite you to explore my shop and discover the world of handmade ceramics that I've poured my heart and soul into. If you have any questions or would like to learn more about a specific piece, please don't hesitate to reach out. I'm excited to share my passion with you and bring a touch of artistry into your life.
-  </h5>
+
+<div class="container">
+  <%# Image and Text on larger screens %>
+  <div class="image-container">
+    <%= image_tag "nomile1.jpeg", height: "400px" %>
+  </div>
+  <div class="text-container">
+    <h5>
+      Hey you! I'm Naomi, and I'm thrilled to welcome you to my ceramic website. Here’s just a bit about me.
+      My journey in the world of ceramics began in the vibrant city of Tel Aviv. I enrolled in pottery classes and discovered a deep connection to clay—its malleability, its ability to transform into something beautiful and meaningful.
+      After honing my skills and exploring different techniques, I embarked on a new adventure and found myself in the enchanting city of Lisbon. Living here has been an incredible source of inspiration. The blend of ancient traditions and modern creativity, along with the stunning coastal landscapes, has greatly influenced my artistic style.
+      Each piece I create tells a story—a story of my personal journey, the places I've been, and the emotions I've experienced. I love experimenting with forms, textures, and glazes. My goal is to bring beauty and joy into people's lives through my ceramics.
+      In addition to creating unique pieces, I'm dedicated to providing my customers with affordability. I want my art to be enjoyed by as many people as possible, without compromising on quality or craftsmanship.
+      Thank you for joining me
+    </h5>
+  </div>
 </div>
+
+<style>
+  .container {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .image-container {
+    margin-right: 20px;
+  }
+
+  .text-container {
+    color: #7F472E;
+    font-weight: 200;
+    flex: 1;
+    font-family: 'Sarabun', sans-serif;
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .image-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+</style>
