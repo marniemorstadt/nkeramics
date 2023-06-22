@@ -32,12 +32,12 @@ default: &default
 
 development:
   <<: *default
-  database: calm_bastion_31231_development
+  database: calm_bastion_31091_development
 
 test:
   <<: *default
-  database: calm_bastion_31231_test
+  database: calm_bastion_31091_test
 
 production:
   <<: *default
-  database: calm_bastion_31231_production
+  database: calm_bastion_31091_production
