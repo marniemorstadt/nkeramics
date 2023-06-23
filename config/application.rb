@@ -16,7 +16,6 @@ require "action_cable/engine"
 require "active_storage/engine"
 require 'devise'
 require 'simple_form'
-require 'cloudinary'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
