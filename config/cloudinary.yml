@@ -1,0 +1,12 @@
+development:
+  cloud_name: "dajeoszcu"
+  api_key: "827384863854236"
+  api_secret: "***************************"
+  secure: true
+
+production:
+  cloud_name: "dajeoszcu"
+  api_key: "827384863854236"
+  api_secret: "***************************"
+  secure: true
+  
