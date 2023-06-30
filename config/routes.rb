@@ -19,4 +19,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
       sessions: 'users/sessions'
     }
+
+    resources :bubble_mugs
+
+
 end

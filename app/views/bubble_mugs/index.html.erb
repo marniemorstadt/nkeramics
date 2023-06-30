@@ -1,0 +1,49 @@
+<a href="/" style="position: absolute; top: 20px; left: 20px; font-size: 24px; margin-right: 5px;"><i class="fas fa-arrow-circle-left"></i></a>
+<div>
+  <%# <%= image_tag("NKillustrations_hands.png", class: "image-behind-components") %>
+  <div>
+    <nav class="container mt-4" style="margin-top:0px;">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/" style="color: #7F472E;">Home</a>
+        </li>
+        <li class="nav-item" style="font-size: 20px;">❁</li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about" style="color: #7F472E;">About</a>
+        </li>
+        <li class="nav-item" style="font-size: 20px;">❁</li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products" style="color: #7F472E;">Shop</a>
+        </li>
+        <li class="nav-item" style="font-size: 20px;">❁</li>
+        <li class="nav-item">
+          <a class="nav-link" href="/lessons" style="color: #7F472E;">Bubble Mugs</a>
+        </li>
+        <li class="nav-item" style="font-size: 20px;">❁</li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact" style="color: #7F472E;">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <ul class="cards">
+    <% @bubble_mugs.each do |mug| %>
+      <%= link_to bubble_mug_path(mug) do %>
+        <div class="card-trip">
+          <% if mug.photos.attached? %>
+            <%= cl_image_tag mug.photos.first.key %>
+          <% else %>
+            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+          <% end %>
+          <div class="card-trip-infos">
+            <div>
+              <h2 style="font-family: 'Sarabun', sans-serif;"><%= mug.name %></h2>
+            </div>
+            <p class="card-trip-pricing" style="font-family: 'Sarabun', sans-serif;"><%= "€#{mug.price}/unit" %></p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </ul>
+</div>

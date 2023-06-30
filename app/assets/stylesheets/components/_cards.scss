@@ -1,28 +1,54 @@
-.cards {
+// .cards {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   margin-top: 10px;
+// }
+
+.card {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr; /* Default layout for desktop */
+  // object-position: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 10px;
 }
+
+// .card-trip {
+//   background: #F5EDCE;
+//   display: flex;
+//   flex-direction: column;
+//   height: 300px;
+//   width: calc(25% - 16px);
+//   max-width: 300px;
+//   border-radius: 20px;
+//   overflow: hidden;
+//   margin-bottom: 16px;
+// }
+
+// @media only screen and (max-width: 890px) {
+//   .card {
+//     display: block; /* Change to block layout for mobile screens */
+//     text-align: center; /* Center the card horizontally */
+//   }
+// }
 
 .card-trip {
   background: #F5EDCE;
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: calc(25% - 16px);
-  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Default layout for desktop */
+  grid-gap: 16px;
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 16px;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .card-trip {
-    width: 100%;
+    grid-template-columns: 1fr !important;  /* Layout for mobile screens */
+    justify-items: center; /* Center the cards horizontally */
   }
 }
-
 .card-trip > img {
   height: 230px;
   width: 100%;
