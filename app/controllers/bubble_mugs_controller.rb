@@ -14,7 +14,6 @@ class BubbleMugsController < ApplicationController
 
   def create
     @bubble_mug = BubbleMug.new(bubble_mug_params)
-
     if @bubble_mug.save
       redirect_to @bubble_mug, notice: 'Bubble Mug was successfully created.'
     else
