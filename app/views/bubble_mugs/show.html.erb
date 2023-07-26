@@ -40,8 +40,9 @@
         <h4 style="color: #7F472E; font-weight: light; font-family: 'Sarabun', sans-serif; margin-bottom: 20px;">
           €<%= @bubble_mug.price %>/unit
         </h4>
-        <a style="font-family: 'Sarabun', sans-serif;" href="https://api.whatsapp.com/send?phone=00351962620650&amp;text=I'm%20interested%20in%20buying%20the%20bubble%20mug:%0A%0AName:%20<%= @bubble_mug.name %>%0ADescription:%20<%= @bubble_mug.description %>%0APrice:%20<%= @bubble_mug.price %>"
-          target="_blank" style="display: inline-block; margin-top: 20px; color: #7F472E;">
+        <a
+          style="font-family: 'Sarabun', sans-serif; display: inline-block; margin-top: 20px; color: #7F472E;"
+          href="https://wa.me/351962620650?text=I'm%20interested%20in%20buying%20the%20product:%0A%0AName:%20<%= @product.name %>%0ADescription:%20<%= @product.description %>%0APrice:%20<%= @product.price %>">
           Buy on WhatsApp!
         </a>
       </div>
