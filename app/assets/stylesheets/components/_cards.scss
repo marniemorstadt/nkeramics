@@ -8,6 +8,15 @@
   margin-top: 10px;
 }
 
+li {
+  list-style-type: none;
+  color:#894329;
+}
+
+li:hover {
+  color:#eac98d;
+}
+
 // .card {
 //   display: grid;
 //   grid-template-columns: 1fr 1fr 1fr 1fr; /* Default layout for desktop */
